@@ -8,7 +8,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div style={remoteStyles.container}>
-        <h2>React Remote App 1</h2>
+        <h2>React Remote App Prod 1</h2>
 
         <nav style={remoteStyles.nav}>
           <NavLink to="/" style={remoteNav}>Home</NavLink>
