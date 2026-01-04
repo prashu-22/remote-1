@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, NavLink, MemoryRouter, useLocation } from "react-router-dom";
 
 const Random = () => <p>🎲 This is a random page.</p>;
 const About = () => <p>ℹ️ This remote demonstrates routing.</p>;
 
-export default function App() {
-
+export default function App({ standalone = true , basename = ""}) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={standalone ? "/" : basename}>
       <div style={remoteStyles.container}>
         <h2>React Remote App Prod 1</h2>
 
